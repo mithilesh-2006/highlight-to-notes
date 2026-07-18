@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight to Notes</title>
+
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <header>
+
+            <h1>Highlight to Notes</h1>
+
+            <p id="pageTitle">
+                Loading page...
+            </p>
+
+            <span id="count">
+                0 Saved Points
+            </span>
+
+        </header>
+
+        <!-- Options -->
+
+        <section class="settings">
+
+            <h3>Export Format</h3>
+
+            <label>
+                <input
+                    type="radio"
+                    name="format"
+                    value="bullet"
+                    checked>
+
+                Bullet List
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="format"
+                    value="number">
+
+                Numbered List
+            </label>
+
+            <hr>
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    id="clearAfterCopy">
+
+                Clear after copy
+
+            </label>
+
+        </section>
+
+        <!-- Notes -->
+
+        <section id="notes">
+
+            <div class="empty">
+
+                No saved highlights yet.
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+
+            <button id="copyBtn">
+
+                Copy Notes
+
+            </button>
+
+            <button id="clearBtn">
+
+                Clear All
+
+            </button>
+
+        </footer>
+
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
